@@ -1,0 +1,232 @@
+// Actions/Prompts
+"SEARCH_TEXT" = "搜尋";
+"CANCEL_TEXT" = "取消";
+"RESET_TEXT" = "重置";
+"SAVE_TEXT" = "儲存";
+"OKAY_TEXT" = "好";
+"YES_TEXT" = "是";
+"NO_TEXT" = "不";
+"MORE_TEXT" = "更多";
+"NOTICE_TEXT" = "注意";
+"COLOR_SAVED" = "顏色已儲存";
+"IMPORT_VIDEO" = "將影片匯入到相簿";
+"SAVED_VIDEO" = "影片已儲存到相簿";
+"SAVED_VIDEO_2" = "儲存到相簿失敗 \n請確認在 iOS 設定 - 隱私權與安全性 - 照片 - YouTube - 是否為「完整取用權限」";
+"OPTIONS_TEXT" = "選項";
+"APPLY_TEXT" = "套用";
+
+// Downloads
+"ALL_TAB" = "全部";
+"VIDEO_TAB" = "影片";
+"AUDIO_TAB" = "音訊";
+"DOWNLOAD_NOTICE" = "不要退出應用程式\n下載完成後將自動關閉";
+"DELETE_VIDEO" = "刪除影片";
+"DELETE_AUDIO" = "刪除音訊";
+"VIDEO_DELETED" = "影片刪除成功";
+"AUDIO_DELETED" = "音訊刪除成功";
+"VIEW_DOWNLOADS" = "瀏覽下載項目";
+"VIEW_DOWNLOADS_IN_FILZA" = "在Filza瀏覽下載項目";
+"PROGRESS_PART1_TEXT" = "進度 (Part 1/2): %.02f%%";
+"PROGRESS_PART2_TEXT" = "進度 (Part 2/2): %.02f%%";
+"PROGRESS_TEXT" = "進度: %.02f%%";
+"DOWNLOAD_AUDIO" = "下載音訊";
+"DOWNLOAD_VIDEO" = "下載影片";
+"EDIT_FILE_NAME" = "編輯檔案名稱";
+"IMPORT_FILE" = "匯入檔案";
+"EXPORT_FILE" = "匯出檔案";
+"IMPORT_ERROR" = "檔案匯入失敗";
+"EXPORT_ERROR" = "檔案匯出失敗！";
+"FILE_ALREADY_IMPORTED" = "檔案已經匯入了？";
+"FILE_ALREADY_EXPORTED" = "檔案已經匯出了？";
+"SUCCESSFULLY_IMPORTED_FILE" = "檔案已成功匯入！";
+"SUCCESSFULLY_EXPORTED_FILE" = "檔案已成功匯出！";
+"PLAY_APP_TEXT" = "用第三方程式播放";
+"CHOOSE_TEXT" = "選擇應用程式";
+"INFUSE_TEXT" = "用 Infuse 播放";
+"VLC_TEXT" = "用 VLC 播放";
+"DOWNLOAD_NOTICE_TEXT" = "請先暫停影片再繼續";
+"DOWNLOAD_FILES_TEXT" = "下載音訊或影片檔案";
+
+// Color Options
+"COLOR_OPTIONS" = "介面顏色選項";
+"COLOR_OPTIONS_2" = "標籤顏色";
+"COLOR_OPTIONS_3" = "SystemBlue 顏色";
+"COLOR_OPTIONS_4" = "進度列顏色";
+
+"CUSTOM_THEME_TAB" = "主題";
+"CUSTOM_TINT_TAB" = "自訂色調";
+"CUSTOM_SYSTEMBLUE_TAB" = "客製 SystemBlue";
+"CUSTOM_PROGRESS_BAR_TAB" = "客製進度列";
+
+// Video Options
+"VIDEO_OPTIONS" = "影片播放選項";
+
+"ENABLE_NO_ADS" = "啟用去廣告";
+"ENABLE_BACKGROUND_PLAYBACK" = "啟用背景播放";
+"ALLOW_HD_ON_CELLULAR_DATA" = "允許行動網路播放高清影片";
+"PORTRAIT_FULLSCREEN" = "直向全螢幕";
+"AUTO_PLAY_IN_FULLSCREEN" = "自動全螢幕播放";
+"DISABLE_PINCH_TO_ZOOM" = "停用兩指縮放";
+"DISABLE_VIDEO_ENDSCREEN_POPUPS" = "停用片尾懸停影片";
+"DISABLE_VIDEO_INFO_CARDS" = "停用影片資訊卡";
+"DISABLE_VIDEO_AUTOPLAY" = "停用影片自動播放";
+"RED_PROGRESS_BAR" = "紅色進度列";
+"GRAY_BUFFER_PROGRESS" = "灰色緩衝進度";
+"HIDE_COLLAPSE_BUTTON" = "隱藏收合按鈕";
+"HIDE_FULLSCREEN_BUTTON" = "隱藏全螢幕按鈕";
+"HIDE_PLAYER_BAR_HEATWAVE" = "隱藏 Player Bar Heatwave";
+"ALWAYS_SHOW_PLAYER_BAR" = "總是顯示播放列";
+"ENABLE_EXTRA_SPEED_OPTIONS" = "啟用額外播放速度";
+"DISABLE_DOUBLE_TAP_TO_SKIP" = "停用點兩下\"快轉/倒轉\"";
+"ENABLE_CUSTOM_DOUBLE_TAP_TO_SKIP_DURATION" = "自訂點兩下\"快轉/倒轉\"時間";
+"VALUE_10_TEXT" = "值 (秒): 10";
+"VALUE_TEXT" = "值 (秒): %.lf";
+"DISABLE_PREMIUM_TEXT" = "開啟\"顯示 YouTube Premium 標誌\"會停用此功能";
+"ALWAYS_SHOW_BAR_TEXT" = "必須在YouTubeReborn 設定開啟「停用相關影片」和「隱藏快速操作」才能使用「總是顯示播放列」";
+
+// Video Player Options
+"VIDEO_PLAYER_OPTIONS" = "播放器的選項";
+
+"HIDE_CONNECT_PLAYER_BUTTON" = "隱藏播放器下方「連接」按鈕";
+"HIDE_SHARE_PLAYER_BUTTON" = "隱藏播放器下方「分享」按鈕";
+"HIDE_REMIX_PLAYER_BUTTON" = "隱藏播放器下方「Remix」按鈕";
+"HIDE_THANKS_PLAYER_BUTTON" = "隱藏播放器下方「超級感謝」按鈕";
+"HIDE_DOWNLOAD_PLAYER_BUTTON" = "隱藏播放器下方「下載」按鈕";
+"HIDE_CLIP_PLAYER_BUTTON" = "隱藏播放器下方「剪輯片段」按鈕";
+"HIDE_SAVE_PLAYER_BUTTON" = "隱藏播放器下方「儲存」按鈕";
+
+// Overlay Options
+"OVERLAY_OPTIONS" = "播放介面選項";
+
+"SHOW_STATUS_BAR_IN_OVERLAY" = "顯示狀態列 (僅限直向)";
+"STOCK_VOLUME_HUD" = "原生系統音量HUD";
+"HIDE_PREVIOUS_BUTTON" = "隱藏上一部按鈕";
+"HIDE_PREVIOUS_BUTTON_SHADOW" = "隱藏上一部按鈕陰影";
+"HIDE_NEXT_BUTTON" = "隱藏下一部按鈕";
+"HIDE_NEXT_BUTTON_SHADOW" = "隱藏下一部按鈕陰影";
+"HIDE_SEEK_BACKWARD_BUTTON_SHADOW" = "隱藏倒轉按鈕陰影";
+"HIDE_SEEK_FORWARD_BUTTON_SHADOW" = "隱藏快轉按鈕陰影";
+"HIDE_PLAY_AND_PAUSE_BUTTON_SHADOW" = "隱藏播放/暫停按鈕陰影";
+"HIDE_AUTOPLAY_SWITCH" = "隱藏自動播放開關";
+"HIDE_CAPTIONS_AND_SUBTITLES_BUTTON" = "隱藏字幕/字幕按鈕";
+"DISABLE_RELATED_VIDEOS" = "停用相關影片";
+"HIDE_CHANNEL_WATERMARK" = "隱藏頻道水印";
+"HIDE_DARK_OVERLAY_BACKGROUND" = "隱藏深色覆蓋背景";
+"HIDE_QUICK_ACTIONS" = "隱藏快速操作";
+"HIDE_CURRENT_TIME" = "隱藏已播放時長";
+"HIDE_DURATION" = "隱藏影片總時長";
+"STATUS_BAR_TEXT" = "無法在瀏海設備設備上啟用此選項";
+"IPAD_TEXT" = "啟用“iPad 佈局”時無法啟用此選項";
+
+// Tab Bar Options
+"TAB_BAR_OPTIONS" = "標籤欄選項";
+
+"STARTUP_PAGE" = "啟動頁面";
+"HOME_TEXT" = "首頁";
+"EXPLORE_TEXT" = "探索";
+"SHORTS_TEXT" = "Shorts";
+"CREATE_TEXT" = "＋";
+"SUB_TEXT" = "訂閱內容";
+"YOU_TEXT" = "你的內容";
+
+"HIDE_TAB_BAR_LABELS" = "隱藏標籤";
+"HIDE_EXPLORE_TAB" = "隱藏探索";
+"HIDE_SHORTS_TAB" = "隱藏Shorts";
+"HIDE_CREATE_TAB" = "隱藏＋";
+"HIDE_SUBSCRIPTIONS_TAB" = "隱藏訂閱內容";
+"HIDE_YOU_TAB" = "隱藏你的內容";
+"REORDER_TABS" = "標籤重新排序";
+
+// Picture In Picture Options
+"PICTURE_IN_PICTURE_OPTIONS" = "子母畫面選項";
+
+"PIP_TEXT" = "子母畫面";
+"PIP_NOTICE_TEXT" = "必須在YouTubeReborn設定中啟用「背景播放」才能使用子母畫面";
+
+"ENABLE_PICTURE_IN_PICTURE" = "啟用子母畫面";
+"HIDE_PIP_ADS_BADGE" = "隱藏子母畫面廣告標記";
+"HIDE_PIP_SPONSOR_BADGE" = "隱藏子母畫面贊助標記";
+
+// Shorts Options
+"SHORTS_OPTIONS" = "Shorts選項";
+
+"HIDE_CHANNEL_AVATAR_BUTTON" = "隱藏頻道頭像";
+"HIDE_LIKE_BUTTON" = "隱藏喜歡按鈕";
+"HIDE_DISLIKE_BUTTON" = "隱藏不喜歡按鈕";
+"HIDE_COMMENTS_BUTTON" = "隱藏評論按鈕";
+"HIDE_REMIX_BUTTON" = "隱藏Remix按鈕";
+"HIDE_SHARE_BUTTON" = "隱藏分享按鈕";
+"HIDE_MORE_ACTIONS_BUTTON" = "隱藏更多(⋮)按鈕";
+"HIDE_SEARCH_BUTTON" = "隱藏搜尋按鈕";
+"HIDE_BUY_SUPER_THANKS_BANNER" = "隱藏超級感謝橫幅";
+"HIDE_SUBSCRIPTIONS_BUTTON" = "隱藏訂閱按鈕";
+"DISABLE_RESUME_TO_SHORTS" = "停用從Shorts播放";
+"ALWAYS_SHOW_PROGRESS_BAR" = "總是顯示進度列";
+
+// Sponsor Block Options
+"SPONSOR_BLOCK_OPTIONS" = "SponsorBlock選項";
+
+"MAIN" = "主要";
+"MIRROR" = "鏡像";
+"DISABLE" = "停用";
+"AUTO_SKIP" = "自動跳過";
+"MANUAL_SKIP" = "手動跳過";
+"SOURCE" = "來源";
+"SPONSOR" = "贊助商";
+"SELFPROMO" = "自薦";
+"INTERACTION" = "推廣頻道";
+"INTRO" = "開場";
+"OUTRO" = "結尾";
+"PREVIEW" = "預覽";
+"FILLER" = "話題/笑話";
+"MUSIC_AND_OFFTOPIC" = "非音樂";
+"WOULD_YOU_LIKE_TO_SKIP" = "您想要跳過嗎?";
+"SPONSOR_DETECTED" = "偵測到贊助商";
+"SELFPROMO_DETECTED" = "偵測到自薦";
+"INTERACTION_DETECTED" = "偵測到推廣頻道";
+"INTRO_DETECTED" = "偵測到開場";
+"OUTRO_DETECTED" = "偵測到結尾";
+"PREVIEW_DETECTED" = "偵測到預覽";
+"FILLER_DETECTED" = "偵測到話題/笑話";
+"MUSIC_OFFTOPIC_DETECTED" = "偵測到非音樂";
+
+// Other Options
+"OTHER_OPTIONS" = "其它選項";
+
+"IPAD_LAYOUT" = "iPad 風格";
+"IPHONE_LAYOUT" = "iPhone 風格";
+"HIDE_CAST_BUTTON" = "隱藏投放按鈕";
+"HIDE_NOTIFICATION_BUTTON" = "隱藏通知按鈕";
+"HIDE_SEARCH_BUTTON" = "隱藏搜尋按鈕";
+"HIDE_PLAY_NEXT_IN_QUEUE" = "隱藏\"加入待播放清單接著播放\"";
+"DISABLE_YOUTUBE_KIDS" = "停用 YouTube Kids";
+"DISABLE_HINTS" = "停用提示";
+"PREMIUM_YOUTUBE_LOGO" = "YouTube Premium 標誌";
+"HIDE_YOUTUBE_LOGO" = "隱藏 YouTube 標誌";
+"STICK_NAVIGATION_BAR" = "固定導覽列";
+"AUTO_HIDE_HOME_BAR" = "自動隱藏底部橫條";
+"APP_VERSION_SPOOFER" = "偽裝應用程式版本";
+"ENTER_CUSTOM_APP_VERSION" = "輸入自訂應用版本號";
+
+// Reborn Settings
+"REBORN_SETTINGS" = "Reborn 設定";
+
+"I_HAVE_YOUTUBE_PREMIUM" = "顯示 YouTube Premium 標誌";
+"HIDE_PLAYER_OVERLAY_OP_BUTTON" = "隱藏在播放器下方的 'OP' 按鈕";
+"HIDE_VIDEO_OVERLAY_OP_BUTTON" = "隱藏在影片中的 'OP' 按鈕";
+"HIDE_SHORTS_OVERLAY_OP_BUTTON" = "隱藏在Shorts中的 'OP' 按鈕";
+"RESET_COLOR_OPTIONS" = "重置顏色選項";
+"RESET_YOUTUBE_REBORN_OPTIONS" = "重置YouTubeReborn所有選項";
+"RESET_CACHE" = "清理快取";
+"RESET_COLOR_TEXT" = "您確定要重置所有顏色設定嗎?";
+"RESET_OPTIONS_TEXT" = "您確定要重置所有設定嗎??";
+
+// Credits
+"CREDITS_BUTTON" = "鳴謝";
+"DEVELOPER_TEXT" = "開發者";
+"ICON_DESIGNER_TEXT" = "圖示設計師";
+"DEV_SUPPORT_TEXT" = "開發支援";
+"FEATURES_DAYANCH96_TEXT" = "功能: \"YouTubeReborn v5 選單\", \"清理快取\", \"紅色進度列\", \"灰色緩衝進度\", \"固定導覽列\", \"停用點兩下跳過\"";
+"FEATURES_POOMSMART_TEXT" = "功能: \"影片播放器下的 YouTubeReborn 按鈕\", \"YouTube-X/Adblock\", \"自動全螢幕播放\"";
+"FEATURES_NGUYEASANG_TEXT" = "功能: \"影片播放器下的 YouTubeReborn 按鈕\"";
+"FEATURES_NSNOOLIE_TEXT" = "功能: \"額外的播放速度\"";
