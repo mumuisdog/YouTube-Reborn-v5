@@ -33,14 +33,12 @@
     
     DownloadsVideoController *videoViewController = [[DownloadsVideoController alloc] init];
     videoViewController.title = @"Video";
-    videoViewController.tabBarItem = [[UITabBarItem alloc] initWithTitle:nil image:[UIImage imageNamed:@"ytrebornbuttonvideoblack.png"] tag:0];
-    videoViewController.tabBarItem.selectedImage = [UIImage imageNamed:@"ytrebornbuttonvideowhite.png"];
+    videoViewController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Video" image:[UIImage systemImageNamed:@"video.circle.fill"] tag:0];
     UINavigationController *videoNavViewController = [[UINavigationController alloc] initWithRootViewController:videoViewController];
     
     DownloadsAudioController *audioViewController = [[DownloadsAudioController alloc] init];
     audioViewController.title = @"Audio";
-    audioViewController.tabBarItem = [[UITabBarItem alloc] initWithTitle:nil image:[UIImage imageNamed:@"ytrebornbuttonaudioblack.png"] tag:1];
-    audioViewController.tabBarItem.selectedImage = [UIImage imageNamed:@"ytrebornbuttonaudiowhite.png"];
+    audioViewController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Audio" image:[UIImage systemImageNamed:@"music.note"] tag:1];
     UINavigationController *audioNavViewController = [[UINavigationController alloc] initWithRootViewController:audioViewController];
     
     self.tabBar.viewControllers = @[videoNavViewController, audioNavViewController];

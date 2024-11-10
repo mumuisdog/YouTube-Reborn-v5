@@ -236,7 +236,9 @@
 
 - (NSString *)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section {
     if (section == 2) {
-        return @"YouTube Reborn v4.2.5";
+        NSDictionary *infoDictionary = [[NSBundle mainBundle] infoDictionary];
+        NSString *appVersion = infoDictionary[@"CFBundleShortVersionString"];     
+        return [NSString stringWithFormat:@"YouTube: v%@\nYouTube Reborn: v4.2.8\n\n@ Lillie (@LillieH1000) 2022-2024", appVersion];
     }
     return nil;
 }

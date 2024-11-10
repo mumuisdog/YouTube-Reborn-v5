@@ -6,17 +6,24 @@
 #import <YouTubeExtractor/YouTubeExtractor.h>
 #import <dlfcn.h>
 #import <rootless.h>
+#import <roothide.h>
 #import "Controllers/RootOptionsController.h"
 #import "Controllers/PictureInPictureController.h"
 #import "Controllers/YouTubeDownloadController.h"
+#import "Controllers/DownloadsController.h"
 #import "YouTubeHeader/YTVideoQualitySwitchOriginalController.h"
 #import "YouTubeHeader/YTVideoWithContextNode.h"
 #import "YouTubeHeader/YTIElementRenderer.h"
 #import "YouTubeHeader/YTISectionListRenderer.h"
 #import "YouTubeHeader/YTWatchNextResultsViewController.h"
+#import "YouTubeHeader/YTReelModel.h"
 #import "YouTubeHeader/ELMCellNode.h"
 #import "YouTubeHeader/ELMNodeController.h"
 #import "YouTubeHeader/YTIMenuConditionalServiceItemRenderer.h"
+#import "YouTubeHeader/YTInnerTubeCollectionViewController.h"
+#import "YouTubeHeader/YTIFormattedString.h"
+#import "YouTubeHeader/GPBMessage.h"
+#import "YouTubeHeader/YTIStringRun.h"
 
 @interface YTQTMButton : UIButton
 @property (strong, nonatomic) UIImageView *imageView;
@@ -64,6 +71,7 @@
 @property(readonly, nonatomic) YTQTMButton *nextButton;
 @property(readonly, nonatomic) ABCSwitch *autonavSwitch;
 @property(readonly, nonatomic) YTQTMButton *closedCaptionsOrSubtitlesButton;
+@property(readonly, nonatomic) YTQTMButton *watchCollapseButton;
 @property(strong, nonatomic) UIButton *rebornOverlayButton;
 - (id)playPauseButton;
 - (void)didPressPause:(id)button;
@@ -165,6 +173,46 @@
 - (NSMutableArray <YTIPivotBarSupportedRenderers *> *)itemsArray;
 @end
 
+@interface YTITopbarLogoRenderer : NSObject
+@property(readonly, nonatomic) YTIIcon *iconImage;
+@end
+@interface YTIIconThumbnailRenderer : GPBMessage
+    @property (nonatomic, strong) YTIIcon *icon;
+    - (bool)hasIcon;
+@end
+@interface YTICompactListItemThumbnailSupportedRenderers : GPBMessage
+    @property (nonatomic, strong) YTIIconThumbnailRenderer *iconThumbnailRenderer;
+    - (bool)hasIconThumbnailRenderer;
+@end
+@interface YTICompactListItemRenderer : GPBMessage
+    @property (nonatomic, strong) YTICompactListItemThumbnailSupportedRenderers *thumbnail;
+    @property (nonatomic, strong) YTIFormattedString *title;
+    - (bool)hasThumbnail;
+    - (bool)hasTitle;
+@end
+@interface YTIIcon (uYouEnhanced)
+    - (bool)hasIconType;
+@end
+@interface YTICompactLinkRenderer : GPBMessage
+    @property (nonatomic, strong) YTIIcon *icon;
+    @property (nonatomic, strong) YTIFormattedString *title;
+    @property (nonatomic, strong) YTICompactListItemThumbnailSupportedRenderers *thumbnail;
+    - (bool)hasIcon;
+    - (bool)hasThumbnail;
+@end
+@interface YTIItemSectionSupportedRenderers (uYouEnhanced)
+    @property(readonly, nonatomic) YTICompactLinkRenderer *compactLinkRenderer;
+    @property(readonly, nonatomic) YTICompactListItemRenderer *compactListItemRenderer;
+    - (bool)hasCompactLinkRenderer;
+    - (bool)hasCompactListItemRenderer;
+@end
+@interface YTAppCollectionViewController : YTInnerTubeCollectionViewController
+- (void)uYouEnhancedFakePremiumModel:(YTISectionListRenderer *)model;
+@end
+@interface YTInnerTubeCollectionViewController (uYouEnhanced)
+    @property(readonly, nonatomic) YTISectionListRenderer *model;
+@end
+
 @interface YTSingleVideo : NSObject
 - (NSString *)videoId;
 @end
@@ -203,8 +251,13 @@
 @end
 
 @interface YTInlinePlayerBarContainerView : UIView
-@property(readonly, nonatomic) YTLabel *durationLabel;
 @property(readonly, nonatomic) YTLabel *currentTimeLabel;
+@property(readonly, nonatomic) YTLabel *durationLabel;
+@property (nonatomic, assign, readwrite) BOOL canShowFullscreenButton;
+@property (nonatomic, assign, readwrite) BOOL showOnlyFullscreenButton;
+@property (nonatomic, assign, readwrite) BOOL fullscreenButtonDisabled;
+- (YTQTMButton *)exitFullscreenButton;
+- (YTQTMButton *)enterFullscreenButton;
 @end
 
 @interface YTColorPalette : NSObject

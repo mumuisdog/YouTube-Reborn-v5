@@ -1,12 +1,12 @@
 ## YouTube Reborn: Best Customizer for iOS YouTube App
 
-Revitalize your YouTube experience with YouTube Reborn—a tweak developed by LillieH1000. Compatible with non-jailbroken and jailbroken iOS and iPadOS devices, this tweak works seamlessly on iOS/iPadOS 14-17 while supporting the latest version of YouTube.
+Revitalize your YouTube experience with YouTube Reborn—a tweak developed by LillieH1000. Compatible with non-jailbroken and jailbroken iOS and iPadOS devices, this tweak works seamlessly on iOS/iPadOS 15.0-17.5.1 while supporting the latest version of YouTube.
 
 -----
 
 ### Download YouTube Reborn
 
-Get ready to have a better YouTube experience! Download the Ipa or Deb file from the [latest release](https://github.com/arichorn/YouTube-Reborn/releases/latest/) on GitHub.
+Get ready to have a better YouTube experience! Download the Deb file from the [latest release](https://github.com/arichorn/YouTube-Reborn/releases/latest/) on GitHub.
 
 -----
 

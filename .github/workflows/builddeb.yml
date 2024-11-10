@@ -7,24 +7,24 @@ on:
     
 jobs:
   build:
-    runs-on: macos-latest
+    runs-on: macos-13
     steps:
       - uses: actions/checkout@main
 
-      - name: Checkout theos/theos
+      - name: Checkout RootHide/theos
         uses: actions/checkout@main
         with:
-          repository: theos/theos
+          repository: RootHide/theos
           ref: master
           submodules: recursive
           path: theos
 
-      - name: Checkout chrisharper22/sdks
+      - name: Checkout theos/sdks
         uses: actions/checkout@main
         with:
-          repository: chrisharper22/sdks
-          ref: main
-          sparse-checkout: iPhoneOS16.2.sdk
+          repository: theos/sdks
+          ref: master
+          sparse-checkout: iPhoneOS16.5.sdk
           path: theos/sdks
 
       - name: Checkout PoomSmart/YouTubeHeader
@@ -36,12 +36,13 @@ jobs:
 
       - name: Build Package 
         run: |
-          brew install make xz ldid 
+          brew install make ldid 
           export THEOS=theos
           gmake clean package FINALPACKAGE=1
           gmake clean package FINALPACKAGE=1 THEOS_PACKAGE_SCHEME=rootless
+          gmake clean package FINALPACKAGE=1 THEOS_PACKAGE_SCHEME=roothide
 
       - name: Upload a Build Artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           path: packages/*.deb

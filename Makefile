@@ -1,4 +1,6 @@
-TARGET = iphone:clang:16.2:14.0
+TARGET = iphone:clang:16.5:14.0
+export SDK_PATH = $(THEOS)/sdks/iPhoneOS16.5.sdk/
+export SYSROOT = $(SDK_PATH)
 YouTubeReborn_USE_FLEX = 0
 YouTubeReborn_USE_FISHHOOK = 0
 GO_EASY_ON_ME = 1
@@ -7,6 +9,7 @@ MODULES = jailed
 FINALPACKAGE = 1
 CODESIGN_IPA = 0
 
+PACKAGE_NAME = $(TWEAK_NAME)
 TWEAK_NAME = YouTubeReborn
 DISPLAY_NAME = YouTube
 BUNDLE_ID = com.google.ios.youtube
